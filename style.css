@@ -1,0 +1,273 @@
+body{
+    font-family: "Century Gothic", Calibri, serif;
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: normal;
+    text-align: center;
+}
+
+header{
+    height: 100px;
+}
+
+footer{
+    height: 80px;
+    background-color: #ccc;
+    text-align: center;
+    border-top: 2px solid #aaa;
+    padding-top: 20px;
+}
+
+
+/* STYLE DE MA NAV  */
+
+nav{
+    width: 100%;
+    background-color: #424558;
+}
+nav ul{
+    margin: 0px;
+    padding: 0px;
+}
+nav li{
+    list-style: none;
+    float: left;
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.table{
+    display: table;
+    margin: 0px auto;
+}
+
+
+/* STYLE DE MON MENU LORS DU PASSAGE DE LA SOURIS  */
+
+.menu-ind:hover, .presentation{
+    border-top: 5px solid #4c8;
+    background-color: rgba(60, 200, 130, 0.15);
+}
+
+.menu-exp:hover, .parcours{
+    border-top: 5px solid #f1dc4f;
+    background-color: rgba(241, 211, 79, 0.15);
+}
+
+.menu-hob:hover, .competences{
+    border-top: 5px solid #0070bb;
+    background-color:rgba(000, 112 ,192, 0.2);
+}
+
+.menu-cont:hover, .recommandation{
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228, 76, 38, 0.188);
+}
+
+.presentation, .parcours, .competences, .recommandation{
+    margin-bottom: 0px;
+}
+nav li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+
+/* NOUS ALLONS STYLISER LES**************SECTION DE NOTRE PAGE  */
+section{
+    width: 100%;
+    min-height: 300px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.presentation .sec .right{
+    margin-top: 50px;
+}
+
+img{
+    width: 50%;
+}
+
+.im{
+    width: 100%;
+    height: 100%;
+    border: 8px ridge black;
+
+}
+
+.sec{
+    margin: 0px 15%;
+}
+
+.left{
+    float: left;
+    width: 25%;
+}
+
+.right{
+    float: left;
+    width: 65%;
+    margin-left: 10%;
+
+}
+
+.cleft, .cright, .sousleft, .sousright{
+    width: 50%;
+    float: left;
+}
+
+.sec::after, .exp::after, .reco::after{
+    content: "";
+    display: table;
+    clear: both;
+ }
+
+ /* LE STYLE DE MA DEUXIEME PAGE DE MON SITE  */
+  .sec{
+    margin: 0px 10%;
+  }
+ .orange{
+    border-top: 5px solid #e47d26;
+    background-color: rgba(228, 117, 38, 0.2);
+    margin-bottom: 0px;
+ }
+
+ .rose{
+    border-top: 5px solid #e44d96;
+    background-color: rgba(228, 77, 128, 0.15);
+    margin-bottom: 0px;
+ }
+
+ /* STYLE DE LA SECTION DE NOTRE HOBBIES */
+
+ .vert{
+    border-top:5px solid #5f6;
+    background-color: rgba(70, 240, 80, 0.15);
+ }
+ .bleu{
+    border-top: 5px solid #29c;
+    background-color:  rgba(30, 152, 212, 0.15);
+ }
+
+ .jaune{
+    border-top:5px solid #f3ed41;
+    background-color: rgba(240, 255, 69, 0.10);
+ }
+
+ .rouge{
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+    margin-bottom: 0px;
+ }
+
+ .img-foot{
+    margin-left: 20%;
+ }
+
+ .img-foot, .img-natation{
+    width: 100%;
+ }
+
+ .vert, .bleu, .jaune{
+    margin-bottom: 0px;
+ }
+
+ .leftexp{
+    width: 45%;
+    float: left;
+ }
+
+ .rightexp{
+    width: 50%;
+    float: left;
+    margin-left: 5%;
+ }
+
+ .img-digitazone{
+    width: 60%;
+    margin-bottom: 35px;
+    border: 2px solid rgba(128, 128, 128, 0.536);
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px rgb(47, 47, 47);
+ }
+
+ .img-stp{
+    width: 60%;
+   margin-top: -15px;
+   border: 2px solid rgba(201, 6, 6, 0.783);
+   border-radius: 5%;
+   box-shadow: 0px 0px 8px rgba(14, 13, 13, 0.764);
+ }
+
+ .orange .sec .rightexp{
+    margin-top: 60px;
+ }
+
+/* STYLE DE MA NAV RESPONSIVE AVEC LE @MEDIA SCREEN  */
+
+@media screen and (max-width: 780px){
+    header{
+        height: 50px;
+    }
+    h1{
+        font-size: 28px;
+        margin: 20px 0px 0px 0px;
+    }
+    nav li a{
+        font-size: 12px;
+        padding: 10px;
+    }
+    nav li:hover a{
+        padding: 5px 10px 10px 10px;
+    }
+
+    .presentation .sec .right{
+        margin-top: 0px;
+    }
+
+    .sec{
+        margin: 0px 0px;
+    }
+    .im{
+        width: 150px;
+        height: 180px;
+        border-width: 4px;
+    }
+
+    .sec, .exp, .reco{
+        margin-top: 25px;
+    }
+
+    /* PARTI EXPERIENCE */
+    .img-digitazone{
+        width: 90%;
+     }
+
+     
+ .img-stp{
+    width: 100%;
+    margin-top: 15px;
+ }
+
+ 
+ .orange .sec .rightexp{
+    margin-top: 10px;
+ }
+
+ .rightexp{
+    margin-left: 4%;
+
+ }
+}
+
+/* FIN DU STYLE DE MON  HEADER ET MA NAVBAR */

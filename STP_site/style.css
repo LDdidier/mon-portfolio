@@ -1,0 +1,535 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p{
+    color:#000000;
+    line-height: 27px;
+}
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 16px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s;
+    background-color: #fff;
+}
+
+.logo{
+    color: #000;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+    border: 2px solid #000;
+    box-shadow: 4px 3.5px 4px #000;
+    padding: 3px 8px;
+    border-radius: 5px;
+    background-color: #ff6e13;
+}
+
+.logo span{
+    color: #fff;
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar a{
+    color:#000 ;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.navbar .btn-location{
+    padding: 8px 20px;
+    background-color: #ff6e13;
+    margin-top: -10px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.btn-location:hover{
+    background-color: rgb(152, 152, 152);
+    color: #000000;
+    transition: ease-out;
+}
+
+header .navbar li a:hover{
+    color: #ff6e13;
+    border-bottom:2px solid #ff6e13;
+    transition: 0.1s;
+}
+ /* STYLE DE LA PREMIERE ******************************* SECTION DE MON SITES  */
+
+ .banniere{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(https://locationvoiture225.files.wordpress.com/2019/02/location-de-voiture-c3a0-abidjan-banner.jpg);
+    background-size: cover;
+ }
+
+ .banniere .contenu{
+    max-width: 70%;
+    text-align: center;
+ }
+
+ .banniere .contenu h2{
+    color:#ffffff;
+    font-size: 3em;
+    text-transform: capitalize;
+ }
+
+ .contenu p:nth-child(2){
+    font-size: 1.2em;
+    font-weight: 600;
+ }
+
+ .btn1{
+    font-size: 1em;
+    color: #fff;
+    background: #ff6e13;
+    padding: 8px 18px;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    margin-left: 15px;
+ }
+
+ .btn2{
+    font-size: 1em;
+    color: #fff;
+    background: #2b5272;
+    padding: 8px 18px;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    margin-left: 15px;
+ }
+
+ .btn1:hover{
+    letter-spacing: 3px;
+ }
+
+ /* STYLE DE LA DEUXIEME ********************************* SECTION DE NOTRE PAGE */
+
+ section{
+    padding: 100px;
+ }
+
+ .row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .row .col50{
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .row .col50 h2{
+    margin-bottom: 20px;
+ }
+
+ .titre-texte{
+    color: #000;
+    font-size: 2em;
+    font-weight: 800;
+    text-transform:capitalize;
+ }
+
+ .titre-texte span{
+    color: #ff6e13;
+    font-size: 1.5em;
+    font-weight: 700;
+ }
+
+
+ .row .col50 img{
+    height: 350px;
+    width: 500px;
+    position: relative;
+ }
+
+ /* STYLE DE NOTRE SECTION *********************************VENTE DE LA  PAGE*/
+ .titre{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+ }
+
+ .vente{
+   margin-top: -100px;
+ }
+
+ .vente .contenu{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-top: 40px;
+ }
+
+ .vente .contenu .box{
+   width: 350px;
+   margin: 10px;
+   border: 20px solid #fff;
+   box-shadow: 25px 15px 35px rgba(0, 0, 0, 0.8);
+ }
+
+ .vente .contenu .box .imbox{
+   position: relative;
+   width: 100%;
+   height: 250px;
+ }
+
+ .vente .contenu .box .imbox img{
+   width: 310px;
+   height: 230px;
+   position: relative;
+   top: 0px;
+   left: 0px;
+ }
+
+ .vente .contenu .box .texte{
+   text-align: center;
+   font-weight: 300;
+   color: #111;
+ }
+
+ .vente .contenu .box .texte h3{
+   font-weight: 400;
+ }
+
+ /* Nous allons ajoute du style a notre section  expert */
+
+ .expert{
+   margin-top: -100px;
+ }
+
+ .expert .contenu{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 35px;
+ }
+
+ .expert .contenu .box{
+   width: 250px;
+   margin: 15px;
+ }
+
+ .expert .contenu .box img{
+   position: relative;
+   width: 100%;
+   height: 320px;
+   top: 0px;
+   left: 0px;
+   object-fit: cover;
+ }
+
+ .expert .contenu .box h3{
+   color: #111;
+   font-weight: 400;
+   text-align: center;
+   margin-top: 10px;
+ }
+
+ /* style de nos temoignage ****************************dojfopf jeopjgt */
+
+ .temoignage{
+   background-image: url(https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX29638410.jpg);
+ }
+
+ .temoignage .contenu{
+   display: flex;
+   margin-top: 30px;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   flex-direction: row;
+}
+
+.temoignage .contenu .box{
+   width: 230px;
+   margin: 20px;
+   background: #fff;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   flex-direction: column;
+   border-radius: 15px;
+   padding: 15px;
+}
+
+.temoignage .contenu .box .imbox{
+   width: 75px;
+   height: 70px;
+   position: relative;
+   border-radius: 50px;
+   margin-bottom: 20px;
+   overflow: hidden;
+}
+
+.temoignage .contenu .box .imbox img{
+   position: relative;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   justify-content: center;
+   align-items: center;
+}
+
+.temoignage .contenu .box .texte{
+   text-align: center;
+   font-style: italic;
+   color: #666;
+}
+
+.temoignage .contenu .box .texte h3{
+   color: #ff6e13;
+   margin-top: 20px;
+   font-size: 1em;
+   font-weight: 600;
+   text-align: center;
+}
+
+.blanc .titre-texte{
+   color:#fff ;
+}
+
+.blanc p{
+   color: #fff;
+   margin-top: 8px;
+}
+
+
+/* nous allons styliser ***********************la section de notre contact */
+
+.contact{
+   background-image: url(https://images.carexpert.com.au/crop/1200/630/vehicles/source-g/b/8/b84284c9.jpg);
+   background-size:cover;
+   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+   width: 100%;
+   background-position: unset;
+}
+
+.contactform{
+   padding: 75px 50px;
+   background: #fff;
+   box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+   max-width: 410px;
+   margin-top: 50px;
+   justify-content: center;
+   align-items: center;
+   margin-left: 33%;
+}
+
+.contactform .inputboite{
+   position: relative;
+   width: 100%;
+   margin-bottom: 13px;
+}
+
+.contactform h3{
+   color: #111;
+   font-size: 1.2em;
+   margin-bottom: 22px;
+}
+
+.contactform .inputboite input,
+.contactform .inputboite textarea{
+   width: 100%;
+   border: 1px solid #555;
+   padding: 10px;
+   color: #111;
+   outline: none;
+   font-size: 16px;
+   font-weight: 300;
+   resize: none;
+}
+
+/* style de mon boutton contact  */
+
+.contactform .inputboite input[type="submit"]{
+   font-size: 1em;
+   font-weight: 700;
+   color: #fff;
+   background:#ff6e13;
+   display: inline-block;
+   cursor: pointer;
+   text-transform: uppercase;
+   text-decoration: none;
+   letter-spacing: 1px;
+   outline: none;
+   border: none;
+   transition: 0.5s;
+   max-width: 118px;
+   align-items: center;
+   justify-content: center;
+}
+
+.copyright{
+   padding: 20px 40px;
+   border-top: 2px solid rgba(0, 0, 0, 0.1);
+   background: rgb(228, 222, 222);
+   text-align: center;
+}
+
+.copyright p:nth-child(1){
+   color: #333;
+
+}
+
+.copyright a{
+   color:#ff6e13;
+   text-decoration: none;
+   font-weight:600 ;
+   font-style: italic;
+}
+
+
+/* le style de notre clas**************************s javascript */
+
+header .sticky{
+   background: #fff;
+   padding: 10px 10px;
+   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+/* LA PARTIE RESPONSIVE******************************* DE NOTRE SITE WEB  */
+
+
+@media (max-width: 800px) {
+   .row .col50 {
+      position: relative;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+  }
+
+  /* le sytle de mon header  */
+
+  header{
+   paddin-left: 10px;
+  }
+
+  header .navbar li {
+   margin-left: 0px;
+  }
+
+  header .navbar li a{
+   text-decoration: none;
+   color: #111;
+   font-size: 1.5;
+   font-weight: 280;
+  }
+
+  /* une petite section en modification  */
+  section{
+   padding: 20px;
+  }
+
+  /* style responsive de notre banierre de notre .banniere */
+
+  .banniere .contenu h2{
+   font-size: 2.3em;
+  }
+
+  /* responsive de notre section expert  */
+   .expert{
+      margin-top: 5px;
+   }
+
+   .expert .titre p{
+      text-align: center;
+   }
+
+   /* responsive de notre section vente  */
+
+   .vente{
+      margin-top: 5px;
+   }
+
+   .vente p{
+      text-align: center;
+   }
+
+   /* section style temoignage  */
+
+   .temoignage .blanc p{
+      text-align: center;
+   }
+
+   .temoignage .blanc .titre-texte{
+      font-size: 1.8em;
+   }
+
+   /* section contact style responsive  */
+
+   .contact .titre p{
+      text-align: center;
+   }
+
+   .contact .contactform{
+      margin-left: 21px;
+   }
+
+  .navbar{
+   display: none;
+  }
+  /* mon a propos style  */
+  .row{
+   flex-direction: column;
+  }
+  
+  .apropos .titre-texte{
+   font-size: 1.5em;
+   text-align: center;
+  }
+
+  .apropos .row .col50  p{
+   text-align: center;
+  }
+}
+
+
